@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import VideoPlayer from '../components/VideoPlayer';
 
 import levelblockout from '../assets/images/levelblockout.png';

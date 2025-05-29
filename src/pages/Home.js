@@ -99,12 +99,6 @@ const Home = () => {
       </section>
 
       {/* Project Carousel Section */}
-      {/* <section className="project-carousel-section py-5 bg-light">
-        <Container>
-          <h2 className="text-center mb-4">Latest Updates</h2>
-          <DiscordImageCarousel limit={5} />
-        </Container>
-      </section> */}
     </Container>
   );
 };
