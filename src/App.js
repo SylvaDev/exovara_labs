@@ -4,7 +4,6 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-// We'll create these components next
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 
