@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import DiscordImageCarousel from '../components/DiscordImageCarousel';
-import { FaUserCircle, FaGamepad, FaCode, FaPalette, FaVideo, FaLaptopCode, FaMap } from 'react-icons/fa';
+import { FaGamepad, FaCode, FaVideo, FaLaptopCode, FaMap } from 'react-icons/fa';
 
 const TeamMember = ({ name, title, icon: Icon }) => (
   <Col xs={6} sm={4} className="mb-3">

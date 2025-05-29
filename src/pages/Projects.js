@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import VideoPlayer from '../components/VideoPlayer';
 
-import testimage from '../assets/images/testimage.png';
 import levelblockout from '../assets/images/levelblockout.png';
 import gameplayVideo from '../assets/videos/gameplay.mp4';
 // import screenshot3 from '../assets/images/screenshot3.jpg';
