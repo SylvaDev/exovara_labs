@@ -1,5 +1,21 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-gold: #FFD700;
+  --secondary-gold: #B8860B;
+  --dark-bg: #121212;
+  --darker-bg: #0A0A0A;
+  --light-text: #FFFFFF;
+  --gray-text: #d1d1d1;
+}
+
 .App {
   text-align: center;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +51,227 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navbar customization */
+.navbar {
+  background-color: var(--darker-bg) !important;
+  box-shadow: 0 2px 15px rgba(255, 215, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--primary-gold) !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 10px var(--primary-gold);
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: var(--light-text) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--primary-gold) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Content spacing */
+.content {
+  padding-top: 76px;
+  min-height: calc(100vh - 76px);
+}
+
+/* Section styling */
+section {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+}
+
+/* Card styling */
+.card {
+  background-color: var(--darker-bg);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+  border-color: var(--primary-gold);
+}
+
+.card-title {
+  color: var(--primary-gold);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #E0E0E0;  /* Softer white/gray */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--primary-gold);
+  margin-bottom: 1.5rem;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.lead {
+  color: var(--gray-text);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px var(--primary-gold),
+                 0 0 10px var(--primary-gold),
+                 0 0 15px var(--primary-gold);
+  }
+  to {
+    text-shadow: 0 0 10px var(--primary-gold),
+                 0 0 20px var(--primary-gold),
+                 0 0 30px var(--primary-gold);
+  }
+}
+
+/* Carousel customization */
+.carousel {
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 2rem 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding-top: 66px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/* Loading spinner */
+.spinner-border {
+  color: var(--primary-gold);
+}
+
+/* Alert customization */
+.alert {
+  background-color: var(--darker-bg);
+  border: 1px solid var(--primary-gold);
+  color: var(--light-text);
+}
+
+.alert-danger {
+  border-color: #dc3545;
+}
+
+.alert-info {
+  border-color: var(--primary-gold);
+}
+
+/* General styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Team Member Cards */
+.team-member-card {
+  background-color: var(--darker-bg);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.1);
+  border-color: var(--primary-gold);
+}
+
+.team-member-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.team-member-name {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--primary-gold);
+}
+
+.team-member-title {
+  color: var(--gray-text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0;
 }

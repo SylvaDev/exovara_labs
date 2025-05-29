@@ -68,3 +68,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Discord Integration Setup
+
+### Required Environment Variables
+1. In the `server/.env` file:
+```
+DISCORD_CHANNEL_ID=your_channel_id
+DISCORD_BOT_TOKEN=your_bot_token
+PORT=5000
+```
+
+2. In the root `.env` file:
+```
+REACT_APP_API_URL=http://localhost:5000/api
+```
+
+### Discord Bot Setup
+1. Create a new application in the [Discord Developer Portal](https://discord.com/developers/applications)
+2. Create a bot for your application
+3. Get the bot token and add it to `server/.env`
+4. Enable the following bot permissions:
+   - Read Messages/View Channels
+   - Read Message History
+5. Get your channel ID (enable Developer Mode in Discord settings first)
+6. Invite the bot to your server using the OAuth2 URL Generator
+7. Add the bot to the specific channel you want to fetch images from
+
+### Remaining Tasks
+- [ ] Set up Discord bot and get required tokens
+- [ ] Configure environment variables
+- [ ] Test Discord image fetching locally
+- [ ] Deploy backend server
+- [ ] Update frontend environment variables with production backend URL
+- [ ] Deploy frontend
+- [ ] Test Discord integration in production
