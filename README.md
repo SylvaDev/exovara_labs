@@ -1,105 +1,149 @@
-# Getting Started with Create React App
+# Exovara Labs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that integrates with Discord to fetch and display images from a specified channel. Built with React, Node.js, and deployed on Vercel.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- Real-time Discord image fetching and display (WIP)
+- Responsive design using React and Bootstrap
+- Secure API endpoints with environment variable management
+- Discord bot integration for automated image retrieval (WIP)
+- Modern UI/UX with reusable components
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- React 18
+- React Router DOM
+- React Bootstrap
+- Axios for API calls
+- React Icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Backend
+- Node.js
+- Express
+- Discord.js
 
 ### Deployment
+- Vercel (Frontend)
+- Environment Variables Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Getting Started
 
-### `npm run build` fails to minify
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Discord Developer Account
+- Discord Server with a bot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Installation
 
-## Discord Integration Setup
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/exovara.git
+cd exovara
+```
 
-### Required Environment Variables
-1. In the `server/.env` file:
+2. Install frontend dependencies
+```bash
+npm install
+```
+
+3. Install backend dependencies
+```bash
+cd server
+npm install
+```
+
+### Environment Setup
+
+1. Create a `.env` file in the root directory:
+```
+REACT_APP_API_URL=http://localhost:5000/api
+```
+
+2. Create a `.env` file in the server directory:
 ```
 DISCORD_CHANNEL_ID=your_channel_id
 DISCORD_BOT_TOKEN=your_bot_token
 PORT=5000
 ```
 
-2. In the root `.env` file:
-```
-REACT_APP_API_URL=http://localhost:5000/api
-```
-
 ### Discord Bot Setup
-1. Create a new application in the [Discord Developer Portal](https://discord.com/developers/applications)
-2. Create a bot for your application
-3. Get the bot token and add it to `server/.env`
-4. Enable the following bot permissions:
+
+1. Visit the [Discord Developer Portal](https://discord.com/developers/applications)
+2. Create a new application
+3. Navigate to the "Bot" section and create a bot
+4. Enable the following permissions:
    - Read Messages/View Channels
    - Read Message History
-5. Get your channel ID (enable Developer Mode in Discord settings first)
-6. Invite the bot to your server using the OAuth2 URL Generator
-7. Add the bot to the specific channel you want to fetch images from
+5. Copy the bot token to your server's `.env` file
+6. Enable Developer Mode in Discord settings to get your channel ID
+7. Use the OAuth2 URL Generator to invite the bot to your server
 
-### Remaining Tasks
-- [ ] Set up Discord bot and get required tokens
-- [ ] Configure environment variables
-- [ ] Test Discord image fetching locally
-- [ ] Deploy backend server
-- [ ] Update frontend environment variables with production backend URL
-- [ ] Deploy frontend
-- [ ] Test Discord integration in production
+### Running the Application
+
+1. Start the backend server:
+```bash
+cd server
+npm start
+```
+
+2. In a new terminal, start the frontend:
+```bash
+npm start
+```
+
+The application will be available at `http://localhost:3000`
+
+## 🔧 Development
+
+### Project Structure
+```
+exovara/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.js
+├── server/
+│   └── index.js
+└── package.json
+```
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App
+
+## 🚀 Deployment
+
+The application is deployed on Vercel. The deployment process is automated through GitHub integration.
+
+## 🔒 Security
+
+- Environment variables are used for sensitive data
+- API endpoints are protected
+- Discord bot tokens are securely stored
+
+## 🤝 Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## 📝 License
+
+This project is licensed under the MIT License
+
+## 👤 Author
+
+Your Name
+- GitHub: [@SylvaDev](https://github.com/SylvaDev)
+- LinkedIn: [@IrvingSylva](www.linkedin.com/in/irvingsylva)
+
+## 🙏 Acknowledgments
+
+- Discord.js for their excellent documentation
+- Create React App for the initial project setup
+- The React and Node.js communities for their amazing tools and support
