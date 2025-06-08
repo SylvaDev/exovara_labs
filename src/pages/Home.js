@@ -34,7 +34,7 @@ const Home = () => {
       icon: FaVideo
     },
     {
-      name: "Windom",
+      name: "Jameson Bullard",
       title: "Character Designer",
       icon: FaGamepad
     },
@@ -45,7 +45,7 @@ const Home = () => {
     // },
 
     {
-      name: "Scuba Steve",
+      name: "Steven H",
       title: "Level Designer",
       icon: FaMap
     }
