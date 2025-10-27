@@ -3,6 +3,7 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import VideoPlayer from '../components/VideoPlayer';
 
 import levelblockout from '../assets/images/levelblockout.png';
+import Splash from '../assets/images/Splash.bmp';
 import gameplayVideo from '../assets/videos/gameplay.mp4';
 // import screenshot3 from '../assets/images/screenshot3.jpg';
 
@@ -11,16 +12,16 @@ const Projects = () => {
 
   const projectImages = [
     {
-      type: 'video',
-      url: gameplayVideo,
-      title: "Gameplay",
-      // description: "Early gameplay footage"
+      type: 'image',
+      url: Splash,
+      title: "",
+      description: ""
     },
     {
-      type: 'image',
-      url: levelblockout,
-      title: "Level Design",
-      description: "A glimpse into our world building process"
+      type: 'video',
+      url: gameplayVideo,
+      title: "",
+      description: ""
     },
     // {
     //   url: "https://i.imgur.com/SPsGd3y.jpg",
@@ -48,12 +49,10 @@ const Projects = () => {
         <Container>
           <Row className="align-items-center">
             <Col md={6}>
-              <h2>HauntScape</h2>
+              <h2>Whispers of Yomi</h2>
               <p className="lead">Project Description</p>
               <p>
-                HauntScape is a horror-themed game that combines elements of survival horror and exploration. The game features a first-person perspective, 
-                a spooky atmosphere and tension, and a focus on exploration and puzzle-solving. With multiple levels we are creating a unique and engaging
-                horror escape room experience.
+                Whispers of Yomi is a story-based multiplayer Anime Adventure
               </p>
             </Col>
             <Col md={6}>

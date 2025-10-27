@@ -21,11 +21,11 @@ const Home = () => {
     {
       name: "Irving Sylva",
       title: "Lead Developer",
-      icon: FaCode
+      icon: FaMap
     },
     {
       name: "Garrett Cramp",
-      title: "Junior Developer",
+      title: "Senior Developer",
       icon: FaLaptopCode
     },
     {
@@ -33,11 +33,11 @@ const Home = () => {
       title: "Media Director",
       icon: FaVideo
     },
-    {
-      name: "Jameson Bullard",
-      title: "Character Designer",
-      icon: FaGamepad
-    },
+    // {
+    //   name: "Jameson Bullard",
+    //   title: "Character Designer",
+    //   icon: FaGamepad
+    // },
     // {
     //   name: "Mike Johnson",
     //   title: "Art Director",
@@ -46,8 +46,8 @@ const Home = () => {
 
     {
       name: "Steven H",
-      title: "Level Designer",
-      icon: FaMap
+      title: "Junior Dev",
+      icon: FaCode
     }
   ];
 
