@@ -59,7 +59,7 @@ const Home = () => {
           <Row className="align-items-center">
             <Col>
               <h1 className="display-4">Welcome to Exovara</h1>
-              <p className="lead">Crafting the future of gaming</p>
+              <p className="lead">Built to Play. Designed to Evolve.</p>
             </Col>
           </Row>
         </Container>

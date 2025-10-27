@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import VideoPlayer from '../components/VideoPlayer';
-
-//import levelblockout from '../assets/images/levelblockout.png';
 import Splash from '../assets/images/Splash.bmp';
-import gameplayVideo from '../assets/videos/gameplay.mp4';
-// import screenshot3 from '../assets/images/screenshot3.jpg';
+
+
 
 const Projects = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -17,17 +15,12 @@ const Projects = () => {
       title: "",
       description: ""
     },
-    {
-      type: 'video',
-      url: gameplayVideo,
-      title: "",
-      description: ""
-    },
     // {
-    //   url: "https://i.imgur.com/SPsGd3y.jpg",
-    //   title: "Character Design",
-    //   description: "Concept art and character development"
-    // }
+    //   type: 'video',
+    //   url: ,
+    //   title: "",
+    //   description: ""
+    // },
   ];
 
   const handleVideoStateChange = (isPlaying) => {
