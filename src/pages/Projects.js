@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import VideoPlayer from '../components/VideoPlayer';
 
-import levelblockout from '../assets/images/levelblockout.png';
+//import levelblockout from '../assets/images/levelblockout.png';
 import Splash from '../assets/images/Splash.bmp';
 import gameplayVideo from '../assets/videos/gameplay.mp4';
 // import screenshot3 from '../assets/images/screenshot3.jpg';
