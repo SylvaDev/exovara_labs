@@ -1,15 +1,31 @@
 {
-  "short_name": "Exovara",
-  "name": "Exovara Labs",
+  "short_name": "Exovara Labs",
+  "name": "Exovara Labs - Independent Game Development Studio",
+  "description": "Built to Play. Designed to Evolve. Independent game development studio creating unique gaming experiences.",
   "icons": [
     {
-      "src": "Logo_EL.png",
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16",
+      "purpose": "any"
+    },
+    {
+      "src": "logo192.png",
       "type": "image/png",
-      "sizes": "186x283"
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FFD700",
+  "background_color": "#0A0A0A",
+  "orientation": "portrait-primary",
+  "categories": ["games", "entertainment", "developer"]
 }
