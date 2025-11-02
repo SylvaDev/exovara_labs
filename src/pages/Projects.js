@@ -210,7 +210,7 @@ const Projects = () => {
             <h3>More Projects Coming Soon</h3>
             <p>We're constantly working on new and exciting projects. Stay tuned for updates!</p>
             <motion.a
-              href="https://discord.gg/exovaralabs"
+              href="https://discord.gg/4h3EPquTtf"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button primary"
