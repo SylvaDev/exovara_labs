@@ -213,7 +213,7 @@ const HeroSection = () => {
                   </motion.a>
                   
                   <motion.a
-                    href="https://discord.gg/exovaralabs"
+                    href="https://discord.gg/4h3EPquTtf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cta-button secondary"

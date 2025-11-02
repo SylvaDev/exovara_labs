@@ -20,7 +20,7 @@ const ModernNavbar = () => {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Discord', href: 'https://discord.gg/exovaralabs', external: true, icon: FaDiscord }
+    { name: 'Discord', href: 'https://discord.gg/4h3EPquTtf', external: true, icon: FaDiscord }
   ];
 
   const containerVariants = {
