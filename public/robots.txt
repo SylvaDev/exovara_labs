@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+# Disallow sensitive files
+Disallow: /.env
+
+
+Sitemap: https://exovaralabs.com/sitemap.xml
